@@ -1,0 +1,165 @@
+/* ---------------------- */
+/* -----  MY STYLES ----- */
+/* ---------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* --- GENERAL STYLES --- */
+/* ---------------------- */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: hsl(179, 62%, 43%);
+  --clr-primary-light: hsl(179, 47%, 52%);
+  --clr-secondary: hsl(71, 73%, 54%);
+  --clr-neutral-light-grey: hsl(204, 43%, 93%);
+  --clr-neutral-dark-grey: hsl(222, 10%, 70%);
+  --clr-neutral-blue: hsl(218, 22%, 67%);
+
+  --clr-white: #fff;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 100vh;
+  background-color: var(--clr-neutral-light-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- REUSABLE STYLES --- */
+
+section {
+  min-width: 300px;
+  width: 90%;
+  max-width: 650px;
+}
+
+section > div:first-of-type {
+  border-radius: 7px 7px 0 0;
+}
+
+section > div > div:last-of-type {
+  border-radius: 0 0 7px 7px;
+}
+
+.light-skin {
+  color: var(--clr-neutral-grey);
+  background-color: var(--clr-white);
+}
+
+.light-skin h2 {
+  color: var(--clr-primary);
+}
+
+.light-skin .cta {
+  color: var(--clr-secondary);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.light-skin p {
+  line-height: 1.75;
+  color: var(--clr-neutral-blue);
+}
+
+.medium-skin {
+  color: var(--clr-white);
+  background-color: var(--clr-primary-light);
+}
+
+.dark-skin {
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+}
+
+.content-box {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a.btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 1em 5em;
+}
+a.btn.btn-secondary {
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+}
+
+.price {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.price > span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 5px;
+  vertical-align: middle;
+  color: var(--clr-neutral-light-grey);
+}
+
+.why-us-list li {
+  list-style: none;
+  color: var(--clr-neutral-light-grey);
+  line-height: 1.4;
+}
+
+footer {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width: 650px) {
+  .col-2 {
+    display: flex;
+  }
+
+  .col-2 > .col {
+    width: 50%;
+  }
+
+  .col-2 > div:first-child {
+    border-radius: 0 0 0 7px;
+  }
+
+  .col-2 > div:last-child {
+    border-radius: 0 0 7px 0;
+  }
+}
+
+/* ---------------------- */
+/* -- CHALLENGE STYLES -- */
+/* ---------------------- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
